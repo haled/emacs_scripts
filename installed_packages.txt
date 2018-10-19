@@ -1,0 +1,34 @@
+ auto-complete      20170124.1845 installed             Auto Completion for GNU Emacs
+  bind-key           20161218.1520 installed             A simple way to manage personal keybindings
+  company            20170715.1035 installed             Modular text completion framework
+  csharp-mode        20170502.158  installed             C# mode derived mode
+  dash               20170810.137  installed             A modern list library for Emacs
+  diminish           20170419.1036 installed             Diminished modes are minor modes with no modeline display
+  epl                20150517.433  installed             Emacs Package Library
+  f                  20170404.1039 installed             Modern API for working with files and directories
+  flycheck           20170802.22   installed             On-the-fly syntax checking
+  frame-cmds         20170506.945  installed             Frame and window commands (interactive functions).
+  frame-fns          20170222.1759 installed             Non-interactive frame and window functions.
+  js2-mode           20170804.335  installed             Improved JavaScript editing mode
+  json-mode          20170719.2205 installed             Major mode for editing JSON files.
+  json-reformat      20160212.53   installed             Reformatting tool for JSON
+  json-snatcher      20150511.2047 installed             Grabs the path to JSON values in a JSON file
+  let-alist          1.0.5         installed             Easily let-bind values of an assoc-list by their names
+  log4e              20170401.604  installed             provide logging framework for elisp
+  markdown-mode      20170803.1101 installed             Major mode for Markdown-formatted text
+  omnisharp          20170804.158  installed             Omnicompletion (intellisense) and more for C#
+  org                20170807      installed             Outline-based notes management and organizer
+  pkg-info           20150517.443  installed             Information about packages
+  popup              20160709.729  installed             Visual Popup User Interface
+  powershell         20161103.2354 installed             Mode for editing Powershell scripts
+  restclient         20170727.825  installed             An interactive HTTP client for Emacs
+  s                  20170428.1026 installed             The long lost Emacs string manipulation library.
+  seq                2.20          installed             Sequence manipulation functions
+  shut-up            20150423.522  installed             Shut up would you!
+  tss                20150913.708  installed             provide a interface for auto-complete.el/flymake.el on typescript-mode.
+  typescript-mode    20170710.427  installed             Major mode for editing typescript
+  use-package        20170710.1234 installed             A use-package declaration for simplifying your .emacs
+  vlf                20170713.1652 installed             View Large Files
+  w3                 4.0.49        installed             Fully customizable, largely undocumented web browser for Emacs
+  yaxception         20150105.652  installed             Provide framework about exception like Java for Elisp
+  zoom-frm           20170309.1439 installed             Commands to zoom frame font size.
