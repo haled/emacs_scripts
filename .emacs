@@ -1,3 +1,35 @@
+;; enable MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+
+;; (defun ensure-package-installed (&rest packages)
+;;   "Assure every package is installed, ask for installation if it’s not.
+
+;; Return a list of installed packages or nil for every skipped package."
+;;   (mapcar
+;;    (lambda (package)
+;;      ;; (package-installed-p 'evil)
+;;      (if (package-installed-p package)
+;;          nil
+;;        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
+;;            (package-install package)
+;;          package)))
+;;    packages))
+
+;; ;; make sure to have downloaded archive description.
+;; ;; Or use package-archive-contents as suggested by Nicolas Dudebout
+;; (or (file-exists-p package-user-dir)
+;;     (package-refresh-contents))
+
+;; (ensure-package-installed 'iedit 'magit) ;  --> (nil nil) if iedit and magit are already installed
+
+
+(package-initialize)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -18,8 +50,13 @@
  '(omnisharp-expected-server-version "1.23.1")
  '(omnisharp-host "http://localhost:2000/")
  '(omnisharp-server-executable-path "~/.emacs.d/.cache/omnisharp/server/v1.23.1/omnisharp")
+ '(package-selected-packages
+   (quote
+    (zoom-frm w3 vlf use-package typescript-mode tss restclient powershell org omnisharp markdown-mode js2-mode company)))
  '(tab-width 4)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(tramp-smb-program "smbutil")
+ '(tramp-verbose 3))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,16 +72,11 @@
 (add-hook 'csharp-mode-hook 'omnisharp-mode)
 (add-hook 'csharp-mode-hook 'company-mode)
 
-;; enable completion after typing .
+(add-to-list 'auto-mode-alist '("\\.cshtml\\'" . html-mode))
+
+;; Enable completion after typing .
 (eval-after-load
     'company
     '(add-to-list 'company-backends 'company-omnisharp))
 
-;; enable MELPA
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
-(package-initialize)
+
