@@ -1,0 +1,235 @@
+{
+    "datasource.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "C777F06B-202E-4480-B475-FA416154D458"
+        },
+        {
+            "name": "Data Hub",
+            "id": "b29451b9-a759-4b3f-acb8-67a17919003f",
+            "parentId": "C777F06B-202E-4480-B475-FA416154D458",
+            "color": "#85AE72",
+            "description": "Connections Related to the Data Hub"
+        }
+    ],
+    "datasource.connections": [
+        {
+            "options": {
+                "server": "clamigsql01",
+                "database": "QBS",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "QBS"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "31a76778-5499-4c06-bdda-e66f6a7ad85f"
+        },
+        {
+            "options": {
+                "server": "cladevsrv01",
+                "database": "Recon_Sim_6",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "Recon_Sim_6"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "008e6ac1-6613-4847-8656-a8647c32d83d"
+        },
+        {
+            "options": {
+                "server": "cladevsrv01",
+                "database": "PAIGlobal",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "PAIGlobal"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "72c4b685-9918-4d7a-be41-06eb40ad62ec"
+        },
+        {
+            "options": {
+                "server": "cladevsql01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": ""
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "b37d7b90-bc1c-4bcf-b5b6-a613ded4df08"
+        },
+        {
+            "options": {
+                "server": "lnxrpt01",
+                "database": "VisaAMMF",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "VisaAMMF"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "18cadbaa-8275-4f0e-be6d-32fa8c847008"
+        },
+        {
+            "options": {
+                "server": "cladevsql01",
+                "database": "Timesheet",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "Timesheet"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "58137f61-7639-41b2-96c4-e65ab094a41a"
+        },
+        {
+            "options": {
+                "server": "cladev01",
+                "database": "PricingAnalysis",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "PricingAnalysis"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "ef814f25-6eb2-4446-b166-41ca6a295546"
+        },
+        {
+            "options": {
+                "server": "dev-boarding-edp-server.database.windows.net,1433",
+                "database": "MerchantDemographics",
+                "authenticationType": "SqlLogin",
+                "user": "settlementboarding_user",
+                "password": "",
+                "connectTimeout": 30,
+                "applicationName": "sqlops",
+                "databaseDisplayName": "MerchantDemographics"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": false,
+            "id": "a6e4299f-4867-4baa-9e64-6a6c65d24c1b"
+        },
+        {
+            "options": {
+                "server": "claqasql01.claqa.local",
+                "database": "Clearent",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": "Clearent"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "e3d62ea8-5c79-4849-8d67-e8a668242094"
+        },
+        {
+            "options": {
+                "server": "lnxrpt01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "databaseDisplayName": ""
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "1c83e545-46da-4471-ab5b-2feaf4447e53"
+        },
+        {
+            "options": {
+                "server": "lnxrpt01",
+                "database": "Boarding",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+                "databaseDisplayName": "Boarding"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "b00f6360-2dd6-469a-9f3c-77807d653f40"
+        },
+        {
+            "options": {
+                "server": "cladevsql01",
+                "database": "Clearent",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+                "databaseDisplayName": "Clearent"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "bf5a2e10-e4e1-4bda-862d-60fbab84670a"
+        },
+        {
+            "options": {
+                "server": "lnxrpt01",
+                "database": "Clearent",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "sqlops",
+                "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+                "databaseDisplayName": "Clearent"
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "99884b3e-546d-4abf-8a14-72195b3c0eb5"
+        },
+        {
+            "options": {
+                "connectionName": "",
+                "server": "clearent-reporting.database.windows.net",
+                "database": "DataHub",
+                "authenticationType": "AzureMFA",
+                "user": "dhale@clearent.com",
+                "password": "",
+                "connectTimeout": 30,
+                "applicationName": "sqlops",
+                "azureTenantId": "6b87202e-574b-4dd9-8b17-d6d221f17ff2",
+                "groupId": "b29451b9-a759-4b3f-acb8-67a17919003f",
+                "databaseDisplayName": "DataHub"
+            },
+            "groupId": "b29451b9-a759-4b3f-acb8-67a17919003f",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "93e7278d-3392-4dfe-9355-cdb4a3ec134b"
+        }
+    ]
+}
