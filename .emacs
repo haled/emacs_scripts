@@ -6,35 +6,57 @@
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
 
-(package-initialize)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(backup-directory-alist (quote (("*" . "~/file_backups"))))
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(column-number-mode t)
- '(company-backends
+ '(css-indent-offset 2)
+ '(custom-enabled-themes (quote (deeper-blue)))
+ '(electric-indent-mode t)
+ '(js-chain-indent t)
+ '(js-curly-indent-offset 0)
+ '(js-indent-level 2)
+ '(js2-highlight-level 3)
+ '(js2-mode-indent-ignore-first-tab t)
+ '(make-backup-files nil)
+ '(mmm-major-mode-preferences
    (quote
-    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
-                  (company-dabbrev-code company-gtags company-etags company-keywords)
-                  company-oddmuse company-dabbrev company-etags)))
- '(custom-enabled-themes (quote (tango-dark)))
- '(indent-tabs-mode nil)
- '(inhibit-startup-screen t)
- '(initial-buffer-choice t)
- '(initial-scratch-message nil)
- '(omnisharp-expected-server-version "1.23.1")
- '(omnisharp-host "http://localhost:2000/")
- '(omnisharp-server-executable-path "~/.emacs.d/.cache/omnisharp/server/v1.23.1/omnisharp")
+    ((perl cperl-mode perl-mode)
+     (python python-mode python-mode)
+     (javascript js2-mode c++-mode)
+     (java jde-mode java-mode c++-mode)
+     (css css-mode c++-mode))))
  '(package-selected-packages
    (quote
-    (zoom-frm w3 vlf use-package typescript-mode tss restclient powershell org omnisharp markdown-mode js2-mode company)))
- '(tab-width 4)
+    (scss-mode js2-mode fsharp-mode vue-mode json-mode powershell omnisharp company exec-path-from-shell)))
+ '(show-paren-mode t)
+ '(speedbar-show-unknown-files t)
  '(tool-bar-mode nil)
- '(tramp-smb-program "smbutil")
- '(tramp-verbose 3))
+ '(vue-modes
+   (quote
+    ((:type template :name nil :mode vue-html-mode)
+     (:type template :name html :mode vue-html-mode)
+     (:type script :name nil :mode js-mode)
+     (:type script :name js :mode js-mode)
+     (:type script :name es6 :mode js-mode)
+     (:type script :name ts :mode typescript-mode)
+     (:type script :name typescript :mode typescript-mode)
+     (:type script :name tsx :mode typescript-tsx-mode)
+     (:type style :name nil :mode css-mode)
+     (:type style :name css :mode css-mode)
+     (:type style :name less :mode less-css-mode)
+     (:type style :name scss :mode css-mode)
+     (:type style :name sass :mode ssass-mode)
+     (:type i18n :name nil :mode json-mode)
+     (:type i18n :name json :mode json-mode)
+     (:type i18n :name yaml :mode yaml-mode)))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -42,19 +64,11 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; enable electric-pair-mode for csharp-mode
-(defun my-csharp-mode-hook ()
-  ;; enable the stuff you want for C# here
-  (electric-pair-mode 1))
-;(add-hook 'csharp-mode-hook 'my-csharp-mode-hook)
+;; C# Stuff
 (add-hook 'csharp-mode-hook 'omnisharp-mode)
 (add-hook 'csharp-mode-hook 'company-mode)
 
-(add-to-list 'auto-mode-alist '("\\.cshtml\\'" . html-mode))
-
-;; Enable completion after typing .
-(eval-after-load
-    'company
-    '(add-to-list 'company-backends 'company-omnisharp))
-
-
+;; MMM Stuff
+(add-hook 'mmm-mode-hook
+    (lambda ()
+        (set-face-background 'mmm-default-submode-face nil)))
