@@ -19,6 +19,7 @@
  '(css-indent-offset 2)
  '(custom-enabled-themes (quote (deeper-blue)))
  '(electric-indent-mode t)
+ '(indent-tabs-mode nil)
  '(js-chain-indent t)
  '(js-curly-indent-offset 0)
  '(js-indent-level 2)
@@ -34,9 +35,10 @@
      (css css-mode c++-mode))))
  '(package-selected-packages
    (quote
-    (scss-mode js2-mode fsharp-mode vue-mode json-mode powershell omnisharp company exec-path-from-shell)))
+    (zoom-window scss-mode js2-mode fsharp-mode vue-mode json-mode powershell omnisharp company exec-path-from-shell)))
  '(show-paren-mode t)
  '(speedbar-show-unknown-files t)
+ '(tab-width 4)
  '(tool-bar-mode nil)
  '(vue-modes
    (quote
